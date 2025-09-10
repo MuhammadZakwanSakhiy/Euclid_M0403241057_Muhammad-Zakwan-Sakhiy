@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAKWAN</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+
+<body onload="hide_loading()">
+    <div class="loading">
+        <img src="images/logo.svg" alt="mazters">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bolder m-0" href="#">
+                <img src="images/logo.svg" alt="logo" width="24" height="24"
+                    class="d-inline-block align-text-center me-2">
+                ZAKWAN
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto fw-bolder">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#proxy">proxy</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <div class="home container-fluid p-0 bg-dark" id="home">
+        <!-- Bawah navbar fixed top -->
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bolder" href="#">
+                    <img src="" alt="logo" width="24" height="24" class="d-inline-block align-text-center me-2">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto fw-bolder">
+                        <a class="nav-link" href=""></a>
+                        <a class="nav-link" href=""></a>
+                        <a class="nav-link" href=""></a>
+                        <a class="nav-link" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar selesai -->
+        <div class="home-content container-fluid d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col p-3">
+                    <img class="home-logo" src="images/logo_besar.svg" alt="Zakwan">
+                    <p class="ps-sm-5 fs-3">
+                        Hello, It's Me<br>
+                        Muhammad Zakwan Sakhiy<br>
+                        And I'm a <span class="job"></span>
+                    </p>
+                </div>
+                <div class="col d-none d-sm-block">
+                    <img class="gambar-laptop mt-5" src="images/laptop.svg" alt="gambar-laptop">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home selesai -->
+
+    <!-- About -->
+    <div class="about container-fluid p-0 text-light d-flex align-items-center" id="about">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-3 d-flex justify-content-center">
+                        <img class="home-logo mt-4 rounded-circle border border-5" src="images/zakwan.png" alt="Zakwan">
+                    </div>
+                    <div class="col-9">
+                        <p class="mt-5 fs-3 fw-bold">
+                            Name : Muhammad Zakwan Sakhiy<br>
+                            NIM : M0403241057<br>
+                            Study Program : Computer Science<br>
+                            Proxy Name : Euclid
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about selesai -->
+
+    <!-- proxy -->
+    <div class="proxy container-fluid p-0 text-light d-flex align-items-center" id="proxy">
+        <div class="container-fluid">
+            <div class="container">
+                <h1 class="fs-2 fw-bold text-center">
+                    EUCLID
+                </h1>
+                <p class="fs-3 fw-bold">
+                    Euclid's theorem is a fundamental statement in number theory that asserts that there are
+                    infinitely many prime numbers. It was first proven by Euclid in his work Elements. There are
+                    at least 200 proofs of the theorem.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="loading.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed6 = new Typed('.job', {
+            strings: ['Student', 'Web Design', 'Programmer', 'Data Scientist'],
+            typeSpeed: 70,
+            backSpeed: 70,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
